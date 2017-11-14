@@ -4,7 +4,7 @@ before_install:
   - cd PhantomCSS
 
 before_script:
-  - AdminLTE-master/
+  - cd AdminLTE-master/
   - python -m SimpleHTTPServer 8080 &
   - sleep 3
   - cd ..
