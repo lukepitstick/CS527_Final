@@ -1,0 +1,16 @@
+language: node_js
+
+before_install:
+  - cd PhantomCSS
+
+before_script:
+  - AdminLTE-master/
+  - python -m SimpleHTTPServer 8080 &
+  - sleep 3
+  - cd ..
+  - npm install -g casperjs
+
+node_js:
+  - "node"
+
+script: casperjs test AdminLTE-Test/testsuite.js
