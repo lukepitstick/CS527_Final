@@ -8,20 +8,10 @@ var path = fs.absolute( fs.workingDirectory + '/phantomcss.js' );
 var phantomcss = require( path );
 var server = require('webserver').create();
 
-var html = fs.read( fs.absolute( fs.workingDirectory + '/AdminLTE-master/index.html' ));
+// var html = fs.read( fs.absolute( fs.workingDirectory + '/AdminLTE-master/index.html' ));
 
 console.log('vars set');
-/*
-server.listen(1234,function(req,res){
-	res.statusCode = 200;
-	res.headers = {
-		'Cache': 'no-cache',
-		'Content-Type': 'text/html;charset=utf-8'
-	};
-	res.write(html);
-	res.close();
-});
-*/
+
 
 console.log('Beginning tests');
 casper.test.begin( 'AdminLTE visual tests', function ( test ) {
@@ -52,7 +42,7 @@ casper.test.begin( 'AdminLTE visual tests', function ( test ) {
 		The test scenario
 	*/
     console.log('starting casper');
-	casper.start( 'http://localhost:80/AdminLTE-master/index.html' );
+	casper.start( 'http://localhost:8080' );
 
 	casper.viewport( 1024, 768 );
 
