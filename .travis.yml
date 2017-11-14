@@ -1,7 +1,7 @@
 language: node_js
 
-#addons:
-#  - artifacts: true
+addons:
+  - artifacts: true
 
 before_install:
   - cd PhantomCSS
