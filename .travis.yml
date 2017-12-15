@@ -21,7 +21,7 @@ node_js:
 
 script: 
   - casperjs test AdminLTE-Test/testsuite.js
-  - mosetests test_AdminLTE.py
+  - nosetests ../Needle/test_AdminLTE.py
 
 after_script:
   - "travis-artifacts upload --path screenshots/*"
