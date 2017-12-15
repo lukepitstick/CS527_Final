@@ -13,8 +13,8 @@ before_script:
   - sleep 3
   - cd ..
   - npm install -g casperjs
-  - pip install selenium
-  - pip install needle
+  - sudo pip install selenium
+  - sudo pip install needle
 
 node_js:
   - "node"
