@@ -1,0 +1,5 @@
+execvp(): No such file or directory
+Error executing phantom at /mnt/c/Users/lukep/AppData/Roaming/npm/node_modules/phantomjs-prebuilt/lib/phantom\bin\phantomjs.exe
+Error: spawn ENOENT
+    at errnoException (child_process.js:988:11)
+    at Process.ChildProcess._handle.onexit (child_process.js:779:34)
