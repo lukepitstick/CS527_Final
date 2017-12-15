@@ -15,6 +15,7 @@ before_script:
   - npm install -g casperjs
   - sudo pip install selenium
   - sudo pip install needle
+  - sudo apt-get install chromium-browser
 
 node_js:
   - "node"
@@ -22,7 +23,7 @@ node_js:
 script: 
   - casperjs test AdminLTE-Test/testsuite.js
   - cd ../Needle/
-  - nosetests test_AdminLTE.py
+  - nosetests test_AdminLTE.py --with-save-baseline
 
 after_script:
   - "travis-artifacts upload --path screenshots/*"
