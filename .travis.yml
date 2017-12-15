@@ -8,6 +8,7 @@ before_install:
 
 before_script:
   - "gem install travis-artifacts"
+  - sudo chmod 777 Needle/chromedriver
   - cd AdminLTE-master/
   - python -m SimpleHTTPServer 8080 &
   - sleep 3
